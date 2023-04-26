@@ -227,6 +227,44 @@
     font-weight: 400;
 }
 
+/*------------CONTACT SECTION------------- */
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 12rem 1rem;
+}
+
+.font{
+    font-weight: 400;
+}
+
+.contact-p u{
+    text-decoration-style: dotted;
+}
+
+.first-input-contact{
+    margin-right: 1rem;
+}
+
+.contact-textarea{
+    width: 100%
+}
+
+.contact-label{
+    font-size: 1.5rem;
+}
+
+.contact-button{
+    width: 100%;
+}
+
+.btn-contact{
+    background-color: #96c93e!important;
+}
+
 /*------------FOOTER------------- */
 
 .footer-nav{
