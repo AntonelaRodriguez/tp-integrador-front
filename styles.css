@@ -107,7 +107,7 @@
 }
 
 .portada p {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     max-width: 50%;
 }
 
@@ -118,9 +118,130 @@
 }
 
 
+/*------------ORADORES SECTION------------- */
+
+.oradores-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 12rem;
+}
+
+.know{
+    color: #8f989b;
+}
+
+.oradores-card{
+    margin: 0 1em;
+}
+
+.card-body{
+    margin: 0rem 1em;
+}
+
+.card-tech{
+    display: flex;
+    margin-top: 1em;
+}
+
+.javascript{
+    margin-right: 0.5em;
+    background-color: #fdc106;
+    border-radius: 10%;
+    padding: 0.3em;
+}
+
+.react{
+    background-color: #16a3b7;
+    border-radius: 10%;
+    padding: 0.3em;
+    color: #f9fafa;
+}
+
+.negocios{
+    margin-right: 0.5em;
+    background-color: #6d757e;
+    border-radius: 10%;
+    padding: 0.3em;
+    color: #f9fafa;
+}
+
+.startups{
+    background-color: #dc3546;
+    border-radius: 10%;
+    padding: 0.3em;
+    color: #f9fafa;
+}
+
+.card-text{
+    margin: 1em 0;
+    color: #8f989b;
+}
+
+/*------------BS AS SECTION------------- */
+
+.information{
+    background-color: #353a40;
+}
+
+.title-info{
+    color: #f9fafa;
+}
+
+.text-information{
+    color: #f9fafa;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*------------FOOTER------------- */
+
+.footer-nav{
+    background-color: #1c3846;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 1rem 12rem;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.li-footer{
+    width: 5rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f9fafa;
+    font-size: 1rem;
+}
+
+.a-footer:hover {
+    color: #6d757e;
+}
+
+
 @media (min-width: 2560px) {
     .portada {
         height: 1200px;
+    }
+    .body-info{
+        margin: 1em 0.5em;
+    }
+    .title-info{
+        font-size: 2.5em;
+    }
+    .text-information{
+        font-size: 1.5em;
+    }
+    .btn-in{
+        height: 3rem;
+        width: 8rem;
+        font-size: 1.2em!important;
     }
 }
 
@@ -133,6 +254,22 @@
     }
     .first-title{
         font-size: 1.5rem;
+    }
+    .portada h1 {
+        font-size: 2em;
+    }
+    .portada p {
+        font-size: 0.9em;
+        max-width: 50%;
+    }
+    .oradores-section{
+        margin: 1rem 6rem;
+    }
+    .oradores-card{
+        margin: 0;
+    }
+    .body-info{
+        margin: 0;
     }
 }
 
@@ -152,6 +289,49 @@
     }
     .nav a {
         font-size: 0.8rem;
+    }
+    .portada{
+        padding: 0 3rem;
+    }
+    .btn-l {
+        height: 2rem;
+        width: 7rem;
+        font-size: 0.6rem!important;
+    }
+    .btn-green{
+        height: 2rem;
+        width: 7rem;
+        font-size: 0.6rem!important;
+    }
+    .javascript{
+       font-size: 0.8em;
+    }
+    .react{
+       font-size: 0.8em;
+    }
+    .negocios{
+       font-size: 0.8em;
+    }
+    .startups{
+       font-size: 0.8em;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .card-text{
+        font-size: 0.8rem;
+    }
+    .btn-in{
+        font-size: 0.8em!important;
+    }
+    .footer-nav{
+        height: 14rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .li-footer{
+        width: 12rem;
     }
 }
 
@@ -188,8 +368,45 @@
     #buy{
         color: #1d6e31;
     }
+    .portada p {
+        font-size: 0.6rem;
+        max-width: 50%;
+    }
+    .know{
+        font-size: 0.8em;
+    }
+    .oradores-section h2 {
+        font-size: 1.5rem;
+    }
+    .card-body{
+        padding: 0!important;
+    }
+    .javascript{
+       font-size: 0.6em;
+    }
+    .react{
+       font-size: 0.6em;
+    }
+    .negocios{
+       font-size: 0.6em;
+    }
+    .startups{
+       font-size: 0.6em;
+    }
+    .card-title{
+        font-size: 0.8rem;
+    }
+    .card-text{
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem!important;
+    }
+    .body-info{
+        margin: 1em 0.5em;
+    }
+    .btn-in{
+        font-size: 0.5em!important;
+    }
 }
-
 @media (max-width: 426px) {
     .nav-bar{
         height: 3rem;
@@ -203,9 +420,13 @@
         height: 3rem;
     }
     .first-title{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .menu{
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
+    .portada p {
+        max-width: 70%;
+    }
+    
 }
