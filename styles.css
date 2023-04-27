@@ -501,5 +501,7 @@
     .portada p {
         max-width: 70%;
     }
-    
+    .contact-section{
+        margin: 2rem 2rem 1rem;
+    }
 }
