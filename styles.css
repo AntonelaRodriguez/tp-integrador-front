@@ -553,6 +553,12 @@
     .btn-in{
         font-size: 0.5em!important;
     }
+    .contact-section{
+        margin: 2rem 2rem 1rem;
+    }
+    .cards-category{
+        margin: 2rem 2rem 1rem;
+    }
 }
 @media (max-width: 426px) {
     .nav-bar{
@@ -575,7 +581,5 @@
     .portada p {
         max-width: 70%;
     }
-    .contact-section{
-        margin: 2rem 2rem 1rem;
-    }
+    
 }
