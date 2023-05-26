@@ -10,90 +10,93 @@
     <title>TP Integrador Front</title>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="title-logo">
-          <img class="img-logo" src="./assets/codoacodo.png" alt="">
-          <h1 class="first-title">Conf Bs As</h1>
-        </div>
-        <div class="menu">
-          <input type="checkbox" name="desplegable" id="desplegable" class="desplegable">
-          <label for="desplegable" class="icon-menu">
-              <i class="fa-solid fa-bars"></i>
-          </label>
-          <ul class="nav">
-              <li class="li-nav"><a class="a-nav" href="#">La conferencia</a></li>
-              <li class="li-nav"><a class="a-nav" href="#">Los oradores</a></li>
-              <li class="li-nav"><a class="a-nav" href="#">El lugar y la fecha</a></li>
-              <li class="li-nav"><a class="a-nav" href="#">Convierte en orador</a></li>
-              <li class="li-nav"><a class="a-nav" id="buy"" href="buyTickets.html" target="_blank">Comprar tickets</a></li>
-          </ul>
-        </div>
-      </div>
+  <div class="nav-bar">
+    <div class="title-logo">
+      <img class="img-logo" src="./assets/codoacodo.png" alt="">
+      <h1 class="first-title">Conf Bs As</h1>
+    </div>
+    <div class="menu">
+      <input type="checkbox" name="desplegable" id="desplegable" class="desplegable">
+      <label for="desplegable" class="icon-menu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <ul class="nav">
+        <li class="li-nav"><a class="a-nav" href="#">La conferencia</a></li>
+        <li class="li-nav"><a class="a-nav" href="#">Los oradores</a></li>
+        <li class="li-nav"><a class="a-nav" href="#">El lugar y la fecha</a></li>
+        <li class="li-nav"><a class="a-nav" href="#">Convierte en orador</a></li>
+        <li class="li-nav"><a class="a-nav" id="buy"" href="buyTickets.html" target="_blank">Comprar tickets</a></li>
+      </ul>
+    </div>
+  </div>
 
-      <div>
-        <div class="row">
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Estudiante</h5>
-                  <p>Tienen un descuento</p>
-                  <h5 class="card-title">80%</h5>
-                  <p>*presentar documetación</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Trainee</h5>
-                  <p>Tienen un descuento</p>
-                  <h5 class="card-title">50%</h5>
-                  <p>*presentar documetación</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Junior</h5>
-                  <p>Tienen un descuento</p>
-                  <h5 class="card-title">15%</h5>
-                  <p>*presentar documetación</p>
-                </div>
-              </div>
-            </div>
+  <div class="cards-category">
+    <div class="row">
+      <div class="col-sm-4 category">
+        <div class="card azul">
+          <div class="card-body status">
+            <h5 class="card-title">Estudiante</h5>
+            <p class="discount">Tienen un descuento</p>
+            <h5 class="card-title">80%</h5>
+            <p class="documentation">*presentar documetación</p>
+          </div>
+        </div>
       </div>
+      <div class="col-sm-4 category ">
+        <div class="card verde">
+          <div class="card-body status">
+            <h5 class="card-title">Trainee</h5>
+            <p class="discount">Tienen un descuento</p>
+            <h5 class="card-title">50%</h5>
+            <p class="documentation">*presentar documetación</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 category">
+        <div class="card amarillo">
+          <div class="card-body status">
+            <h5 class="card-title">Junior</h5>
+            <p class="discount">Tienen un descuento</p>
+            <h5 class="card-title">15%</h5>
+            <p class="documentation">*presentar documetación</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="contact-section">
       <h6 class="know">VENTA</h6>
-  <h2>VALOR DEL TICKET $200</h2>
-
-  <div class="input-group mb-2">
-    <input type="text" class="form-control first-input-contact" placeholder="Nombre" aria-label="Username">
-    <input type="text" class="form-control" placeholder="Apellido" aria-label="Server">
-  </div>
-  <input type="text" class="form-control" placeholder="Correo" aria-label="Server">
-  
-  <form id="comprar-form">
-    <label for="categoria">Categoría:</label>
-    <select id="categoria">
-      <option value="none">Ninguna opción</option>
-      <option value="estudiante">Estudiante</option>
-      <option value="trainee">Trainee</option>
-      <option value="junior">Junior</option>
-    </select>
-
-    
-    <label for="cantidad">Cantidad:</label>
-    <input type="number" id="cantidad" min="1" value="1">
-    
-    <button type="button" onclick="calcularTotal()">Resumen</button>
-    <button type="button" onclick="borrarDatos()">Borrar</button>
-  </form>
-  
-  <div>
-    <p>Total a pagar: $</p>
-    <p id="total-pagar"></p>
-  </div>
-
+      <h2>VALOR DEL TICKET $200</h2>
+      <div class="input-group mb-2">
+        <input id="nombre" type="text" class="form-control first-input-contact" placeholder="Nombre" aria-label="Username">
+        <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Server">
+      </div>
+      <input id="email" type="text" class="form-control" placeholder="Correo" aria-label="Server">
+      <div class="input-group mb-2 buy">
+        <div class="cant">
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" class="form-control" id="cantidad" min="1" value="0">
+        </div>
+        <div class="cat">
+          <label for="categoria">Categoría:</label>
+          <select id="categoria" class="form-control">
+            <option value="none">Ninguna opción</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="trainee">Trainee</option>
+            <option value="junior">Junior</option>
+          </select>
+        </div>
+      </div>
+      <div class="pay">
+        <p class="text-start">Total a pagar: $</p>
+        <p id="total-pagar"></p>
+      </div>
+      <div class=" btn-group gap-3 contact-button">
+        <button class="btn btn-primary btn-contact" type="button" onclick="borrarDatos()">Borrar</button>
+        <button class="btn btn-primary btn-contact" type="button" onclick="calcularTotal()">Resume</button>
+      </div>
+    </div>
 
   <footer class="footer">
     <ul class="footer-nav">

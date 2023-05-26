@@ -294,6 +294,80 @@
     color: #6d757e;
 }
 
+/*------------BUY SECTION------------- */
+
+.cards-category{
+    margin: 2rem 12rem 1rem;
+}
+
+.category{
+    padding: 0.5rem 0.2rem!important;
+}
+
+.status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    border-radius: 0%!important;
+    border-width: 2px!important;
+}
+
+.azul{
+    border-color: #0d81fd!important;
+}
+
+.verde{
+    border-color: #2caabe!important;
+}
+
+.amarillo{
+    border-color: #fdc314!important;
+}
+
+.discount{
+    font-weight: 400;
+}
+
+.documentation{
+    color: #9096a0;
+    font-weight: 400;
+}
+
+.buy{
+    margin-top: 1rem;
+}
+
+.buy label{
+    margin-bottom: 0.5rem;
+}
+
+.cant{
+    width: 50%;
+    padding-right: 0.5rem;
+}
+.cat{
+    width: 50%;
+    padding-left: 0.5rem;
+}
+
+.pay{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #cce5ff;
+    color: #2365b9;
+    margin: 2rem 0;
+}
+
+.pay p {
+    margin: 0.8rem 1.5rem;
+}
 
 @media (min-width: 2560px) {
     .img-slider .slider-container .slide img {

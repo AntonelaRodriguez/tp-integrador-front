@@ -21,6 +21,9 @@ function calcularTotal() {
 
   function borrarDatos() {
     document.getElementById('categoria').selectedIndex = 0; // Restablecer la opción seleccionada a la primera opción
-    document.getElementById('cantidad').value = 1; // Restablecer la cantidad a 1
+    document.getElementById('cantidad').value = 0; // Restablecer la cantidad a 1
     document.getElementById('total-pagar').textContent = ''; // Borrar el contenido del total a pagar
+    document.getElementById('nombre').value = '';
+    document.getElementById('apellido').value = '';
+    document.getElementById('email').value = '';
   }
